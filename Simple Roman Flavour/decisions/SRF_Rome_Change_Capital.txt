@@ -52,7 +52,7 @@ decisions = {
 					b_tivoli = { make_capital_holding = yes }
 					#b_roma = { set_name = Lateran }
 					b_tivoli = { 
-						set_name = Rome 
+#						set_name = Rome 
 						ROOT = { capital = PREV }
 					}
 					ROOT = {
