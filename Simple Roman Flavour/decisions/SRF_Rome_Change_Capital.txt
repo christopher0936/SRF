@@ -1,0 +1,131 @@
+decisions = {
+	make_rome_capital = {
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			ai = no
+			has_dlc = "Legacy of Rome"
+			OR = {
+				has_landed_title = e_roman_empire
+				has_landed_title = e_wre
+			}
+			OR = {
+				any_realm_lord = { 
+					has_landed_title = c_roma 
+				}
+				has_landed_title = c_roma
+			}
+			OR = {
+				any_realm_lord = {
+					has_landed_title = b_tivoli
+				}
+				has_landed_title = b_tivoli
+			}
+			capital_scope = {
+				NOT = { province_id = 333 }
+			}
+		}
+		allow = {
+			OR = {
+				has_landed_title = e_roman_empire
+				has_landed_title = e_byzantium
+				has_landed_title = e_wre
+			}
+			OR = {
+				any_realm_lord = { 
+					has_landed_title = c_roma 
+				}
+				has_landed_title = c_roma
+			}
+		}
+		effect = {
+			custom_tooltip = {
+				text = rome_capital
+				hidden_tooltip = {
+					ROOT = {
+						b_tivoli = {
+							usurp_title = PREV
+						}
+					}
+					b_tivoli = { make_capital_holding = yes }
+					#b_roma = { set_name = Lateran }
+					b_tivoli = { 
+						set_name = Rome 
+						ROOT = { capital = PREV }
+					}
+					ROOT = {
+						c_roma = {
+							usurp_title = PREV
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+	}
+
+	claim_constantinople = {
+		only_independent = yes
+		is_high_prio = yes
+		
+		potential = {
+			is_playable = yes
+			has_dlc = "Legacy of Rome"
+			OR = {
+				has_landed_title = e_roman_empire
+				has_landed_title = e_byzantium
+			}
+			OR = {
+				any_realm_lord = { 
+					has_landed_title = c_byzantion
+				}
+				has_landed_title = c_byzantion
+			}
+			OR = {
+				any_realm_lord = {
+					has_landed_title = b_constantinople
+				}
+				has_landed_title = b_constantinople
+			}
+			capital_scope = {
+				NOT = { province_id = 496 }
+			}
+		}
+		allow = {
+			OR = {
+				any_realm_lord = { 
+					has_landed_title = c_byzantion 
+				}
+				has_landed_title = c_byzantion
+			}
+		}
+		effect = {
+			custom_tooltip = {
+				text = constantinople_capital
+				hidden_tooltip = {
+					ROOT = {
+						b_constantinople = {
+							usurp_title = PREV
+						}
+					}
+					b_constantinople = { make_capital_holding = yes }
+					b_constantinople = {
+						ROOT = { capital = PREV }
+					}
+					ROOT = {
+						c_byzantion = {
+							usurp_title = PREV
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}

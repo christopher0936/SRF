@@ -1,0 +1,9 @@
+#Relocalised Vannila Move Capital related decisions
+claim_constantinople;Make Constantinople Capital;x;x;;x;;;;;;;;;x
+claim_constantinople_desc;The City of the World's Desire, Constantinople, should return to it's role as capital of the Empire;x;x;;x;;;;;;;;;x
+make_rome_capital;Make Rome Capital;x;x;;x;;;;;;;;;x
+make_rome_capital_desc;The city of Rome has seen better days, but no one can deny its symbolic power. If you so wish, you may restore it as the capital of the Empire.;x;x;;x;;;;;;;;;x
+rome_capital;Rome once more becomes the seat of imperial power.;x;x;;x;;;;;;;;;x
+
+#Localised New Mod-Added Move Capital related decisions
+constantinople_capital;Constantinople once more becomes the seat of imperial power.;x;x;;x;;;;;;;;;x
