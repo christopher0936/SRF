@@ -1,0 +1,2 @@
+#In Vanilla, b_tivoli is normally called "Tivoli", unless the "Move Capital to Rome" Decision is taken, in which case it is renamed "Rome". Here it is relocalised to be "Rome" normally, while the renaming effect of the "Move Capital to Rome" decision is disabled.
+b_tivoli;Rome;Rome;Rome;;Rome;;;;;;;;;x
