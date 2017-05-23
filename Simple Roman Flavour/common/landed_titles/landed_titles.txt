@@ -18619,6 +18619,77 @@ e_persia = {
 				}
 			}
 		}
+
+		d_kermanshah = { # Luristan
+			color={ 55 144 95 }
+			color2={ 255 255 255 }
+			
+			capital = 657 # Luristan
+			
+			c_qazwin = {
+				color={ 55 144 90 }
+				color2={ 255 255 255 }
+				
+				b_lambsar = {
+				}
+				b_qazwin = {
+				}
+				b_ahmadabad = {
+				}
+				b_avaj = {
+				}
+				b_abeyek = {
+				}
+				b_takestan = {
+				}
+				b_alvand = {
+				}
+				b_buinzahra = {
+				}
+			}
+			c_kermanshah = {
+				color={ 75 114 90 }
+				color2={ 255 255 255 }
+				
+				b_javanroud = {
+				}
+				b_kermanshah = {
+				}
+				b_hulwan = {
+				}
+				b_paveh = {
+				}
+				b_mahalkufa = {
+				}
+				b_kangavar = {
+				}
+				b_kuzaran = {
+				}
+				b_ravansar = {
+				}
+			}
+			c_luristan = {
+				color={ 75 164 110 }
+				color2={ 255 255 255 }
+				
+				b_dezbar = {
+				}
+				b_khorramabad = {
+				}
+				b_borujerd = {
+				}
+				b_dorood = {
+				}
+				b_aligoodarz = {
+				}
+				b_koohdasht = {
+				}
+				b_poledokhtar = {
+				}
+				b_alashtar = {
+				}
+			}
+		}
 	}
 	
 	k_baluchistan = {
@@ -19353,77 +19424,7 @@ e_persia = {
 		zoroastrian_group = 2000 # Crusade target weight
 		zun_pagan_reformed = 300 # Crusade target weight
 		jewish_group = 500 # Crusade target weight
-		
-		d_kermanshah = { # Luristan
-			color={ 55 144 95 }
-			color2={ 255 255 255 }
-			
-			capital = 657 # Luristan
-			
-			c_qazwin = {
-				color={ 55 144 90 }
-				color2={ 255 255 255 }
-				
-				b_lambsar = {
-				}
-				b_qazwin = {
-				}
-				b_ahmadabad = {
-				}
-				b_avaj = {
-				}
-				b_abeyek = {
-				}
-				b_takestan = {
-				}
-				b_alvand = {
-				}
-				b_buinzahra = {
-				}
-			}
-			c_kermanshah = {
-				color={ 75 114 90 }
-				color2={ 255 255 255 }
-				
-				b_javanroud = {
-				}
-				b_kermanshah = {
-				}
-				b_hulwan = {
-				}
-				b_paveh = {
-				}
-				b_mahalkufa = {
-				}
-				b_kangavar = {
-				}
-				b_kuzaran = {
-				}
-				b_ravansar = {
-				}
-			}
-			c_luristan = {
-				color={ 75 164 110 }
-				color2={ 255 255 255 }
-				
-				b_dezbar = {
-				}
-				b_khorramabad = {
-				}
-				b_borujerd = {
-				}
-				b_dorood = {
-				}
-				b_aligoodarz = {
-				}
-				b_koohdasht = {
-				}
-				b_poledokhtar = {
-				}
-				b_alashtar = {
-				}
-			}
-		}
+
 		d_tigris = {
 			color={ 113 150 32 }
 			color2={ 255 255 255 }
