@@ -4802,118 +4802,6 @@ e_byzantium = {
 		orthodox = 5000 # Crusade target weight
 		catholic = 2000 # Crusade target weight
 		
-		d_nikaea = {
-			color={ 202 101 167 }
-			color2={ 255 255 20 }
-			
-			capital = 750 # Nikaea
-			
-			c_nikaea = {
-				color={ 205 104 170 }
-				color2={ 255 255 20 }
-				
-				turkish = "Iznik"
-				
-				b_nikaea = {
-					turkish = "Iznik"
-				}
-				b_kios = {
-				}
-				b_optimatum = {
-				}
-				b_petobriga = {
-				}
-				b_kotyaion = {
-				}
-				b_palaeokastron = {
-				}
-				b_yalova = {
-				}
-				b_modrene = {
-				}
-			}
-			c_nikomedeia = {
-				color={ 208 107 173 }
-				color2={ 255 255 20 }
-				
-				turkish = "Izmit"
-				
-				b_nikomedeia = {
-					turkish = "Izmit"
-				}
-				b_chalkedon = {
-				}
-				b_chrysopolis = {
-				} 
-				b_praenetos = {
-				}
-				b_calpe = {
-				}
-				b_palodes = {
-				}
-				b_adapazari = {
-					greek = "Mesonesion"
-				}
-				b_malagina = {
-				}
-			}
-			c_prusa = {
-				color={ 211 110 176 }
-				color2={ 255 255 20 }
-				
-				turkish = "Bursa"
-				
-				b_prusa = {
-					turkish = "Hüdavendigar"
-				}
-				b_darieium = {
-					greek = "Dorieion"
-					turkish = "Sögüt"
-				}
-				b_apamea = {
-					greek = "Trigleia"
-					turkish = "Tirilye"
-				}
-				b_docimium = {
-					greek = "Dokimeion"
-					turkish = "Iscehisar"
-				}
-				b_adrastea = {
-				}
-				b_thyatira = {
-				}
-				b_pelopia = {
-				}
-				b_miletopolis = {
-				}
-			}
-			c_kyzikos = {
-				color={ 214 113 179 }
-				color2={ 255 255 20 }
-				
-				turkish = "Erdek"
-				
-				b_kyzikos = {
-					turkish = "Aydincik"
-				}
-				b_artake = {
-					turkish = "Erdek"
-				}
-				b_militopolis = {
-				}
-				b_kremasti = {
-				}
-				b_adrianutherai = {
-				}
-				b_myrina = {
-				}
-				b_percote = {
-				}
-				b_arisbe = {
-				}
-			}
-		}
-		
 		d_thrace = {
 			color={ 172 76 139 }
 			color2={ 255 255 20 }
@@ -6298,6 +6186,117 @@ e_byzantium = {
 				b_dieudamour = {
 				}
 				b_khirokitia = {
+				}
+			}
+		}
+		d_nikaea = {
+			color={ 202 101 167 }
+			color2={ 255 255 20 }
+			
+			capital = 750 # Nikaea
+			
+			c_nikaea = {
+				color={ 205 104 170 }
+				color2={ 255 255 20 }
+				
+				turkish = "Iznik"
+				
+				b_nikaea = {
+					turkish = "Iznik"
+				}
+				b_kios = {
+				}
+				b_optimatum = {
+				}
+				b_petobriga = {
+				}
+				b_kotyaion = {
+				}
+				b_palaeokastron = {
+				}
+				b_yalova = {
+				}
+				b_modrene = {
+				}
+			}
+			c_nikomedeia = {
+				color={ 208 107 173 }
+				color2={ 255 255 20 }
+				
+				turkish = "Izmit"
+				
+				b_nikomedeia = {
+					turkish = "Izmit"
+				}
+				b_chalkedon = {
+				}
+				b_chrysopolis = {
+				} 
+				b_praenetos = {
+				}
+				b_calpe = {
+				}
+				b_palodes = {
+				}
+				b_adapazari = {
+					greek = "Mesonesion"
+				}
+				b_malagina = {
+				}
+			}
+			c_prusa = {
+				color={ 211 110 176 }
+				color2={ 255 255 20 }
+				
+				turkish = "Bursa"
+				
+				b_prusa = {
+					turkish = "Hüdavendigar"
+				}
+				b_darieium = {
+					greek = "Dorieion"
+					turkish = "Sögüt"
+				}
+				b_apamea = {
+					greek = "Trigleia"
+					turkish = "Tirilye"
+				}
+				b_docimium = {
+					greek = "Dokimeion"
+					turkish = "Iscehisar"
+				}
+				b_adrastea = {
+				}
+				b_thyatira = {
+				}
+				b_pelopia = {
+				}
+				b_miletopolis = {
+				}
+			}
+			c_kyzikos = {
+				color={ 214 113 179 }
+				color2={ 255 255 20 }
+				
+				turkish = "Erdek"
+				
+				b_kyzikos = {
+					turkish = "Aydincik"
+				}
+				b_artake = {
+					turkish = "Erdek"
+				}
+				b_militopolis = {
+				}
+				b_kremasti = {
+				}
+				b_adrianutherai = {
+				}
+				b_myrina = {
+				}
+				b_percote = {
+				}
+				b_arisbe = {
 				}
 			}
 		}
