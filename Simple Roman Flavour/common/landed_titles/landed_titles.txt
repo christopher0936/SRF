@@ -5664,63 +5664,6 @@ e_byzantium = {
 				}
 			}
 		}
-		
-		d_cyprus = {
-			color={ 239 109 163 }
-			color2={ 255 255 20 }
-			
-			capital = 757 # Famagusta
-			
-			c_famagusta = {
-				color={ 228 19 156 }
-				color2={ 255 255 20 }
-				
-				turkish = "Magusa"
-				
-				b_famagusta = {
-					turkish = "Magusa"
-				}
-				b_cithium = {
-				}
-				b_nikosia = {
-				}
-				b_sthilarion = {
-				}
-				b_kyrenia = {
-				}
-				b_buffavento = {
-				}
-				b_kantara = {
-				}
-				b_peristerona = {
-				}
-			}
-			c_limisol = {
-				color={ 231 22 159 }
-				color2={ 255 255 20 }
-				
-				turkish = "Leymosun"
-				
-				b_limmassol = {
-					turkish = "Leymosun"
-				}
-				b_paphos = {
-				}
-				b_arsinoe = {
-				}
-				b_kolossi = {
-				}
-				b_morphou = {
-				}
-				b_agridi = {
-				}
-				b_dieudamour = {
-				}
-				b_khirokitia = {
-				}
-			}
-		}
-	}
 	
 	k_anatolia = {
 		color={ 177 60 100 }
@@ -6299,6 +6242,62 @@ e_byzantium = {
 				b_anemurium = {
 				}
 				b_dalisandus = {
+				}
+			}
+		}
+		
+		d_cyprus = {
+			color={ 239 109 163 }
+			color2={ 255 255 20 }
+			
+			capital = 757 # Famagusta
+			
+			c_famagusta = {
+				color={ 228 19 156 }
+				color2={ 255 255 20 }
+				
+				turkish = "Magusa"
+				
+				b_famagusta = {
+					turkish = "Magusa"
+				}
+				b_cithium = {
+				}
+				b_nikosia = {
+				}
+				b_sthilarion = {
+				}
+				b_kyrenia = {
+				}
+				b_buffavento = {
+				}
+				b_kantara = {
+				}
+				b_peristerona = {
+				}
+			}
+			c_limisol = {
+				color={ 231 22 159 }
+				color2={ 255 255 20 }
+				
+				turkish = "Leymosun"
+				
+				b_limmassol = {
+					turkish = "Leymosun"
+				}
+				b_paphos = {
+				}
+				b_arsinoe = {
+				}
+				b_kolossi = {
+				}
+				b_morphou = {
+				}
+				b_agridi = {
+				}
+				b_dieudamour = {
+				}
+				b_khirokitia = {
 				}
 			}
 		}
