@@ -21716,6 +21716,27 @@ e_france = {
 				b_usson = {
 				} 
 			}
+			c_rosello = {
+				color = { 210 140 50 }
+				color2={ 255 255 255 }
+				
+				b_cotlliure = {
+				}
+				b_perpinya = {
+				}
+				b_elna = {
+				}
+				b_cuixa = {
+				}
+				b_prada = {
+				}
+				b_oltrera = {
+				}
+				b_canigo = {
+				}
+				b_ceret = {
+				}
+			}
 		}
 		d_gascogne = {
 			color={ 81 30 243 }
@@ -22981,27 +23002,6 @@ e_spain = {
 				b_elpuidesegur = {
 				}
 				b_tremp = {
-				}
-			}
-			c_rosello = {
-				color = { 210 140 50 }
-				color2={ 255 255 255 }
-				
-				b_cotlliure = {
-				}
-				b_perpinya = {
-				}
-				b_elna = {
-				}
-				b_cuixa = {
-				}
-				b_prada = {
-				}
-				b_oltrera = {
-				}
-				b_canigo = {
-				}
-				b_ceret = {
 				}
 			}
 			c_empuries = {
