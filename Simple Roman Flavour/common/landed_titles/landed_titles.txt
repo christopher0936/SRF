@@ -4535,7 +4535,6 @@ e_germany = {
 
 e_roman_empire = {
 #	color={ 167 10 100 } # Vanilla Colour
-#	color={ 200 0 150 } # Mod WRE Colour
 	color={ 143 12 125 } # Vanilla ERE Colour
 	color2={ 255 255 20 }
 	
