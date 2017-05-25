@@ -4534,8 +4534,9 @@ e_germany = {
 }
 
 e_roman_empire = {
-	color={ 167 10 100 } # Vanilla Colour
-#	color={ 170 0 50 } # Gloria Regni WRE Colour
+#	color={ 167 10 100 } # Vanilla Colour
+#	color={ 200 0 150 } # Mod WRE Colour
+	color={ 143 12 125 } # Vanilla ERE Colour
 	color2={ 255 255 20 }
 	
 	capital = 333 # Rome
@@ -4556,8 +4557,8 @@ e_roman_empire = {
 
 e_byzantium = {
 #	color={ 143 12 125 } # Vanilla Colour
-#	color={ 191 0 255 } # Old Mod Colour
-	color={ 135 0 180 } # Mod Colour
+#	color={ 135 0 180 } # Old Mod Colour
+	color={ 191 0 255 } # Mod Colour
 	color2={ 255 255 20 }
 	
 	capital = 496 # Byzantion
