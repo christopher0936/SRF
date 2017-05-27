@@ -625,7 +625,10 @@ narrative_event = {
 			any_playable_ruler = {
 				limit = {
 					NOT = { has_landed_title = e_byzantium }
-					ai = no
+					OR = {
+						ai = no
+						has_landed_title = e_hre
+					}
 				}
 				narrative_event = { id = LoR.21 }
 			}
@@ -657,6 +660,10 @@ narrative_event = {
 			has_landed_title = e_hre
 		}
 		prestige = -500
+		e_hre = {
+			set_name = disgracedhre
+			adjective = disgracedhre_adj
+		}
 	}
 }
 
