@@ -1517,6 +1517,7 @@ decisions = {
 		potential = {
 			is_playable = yes
 			has_global_flag = charlemagne_hre
+			NOT = { has_global_flag = rome_restored }
 			independent = yes
 			OR = {
 				religion = catholic
