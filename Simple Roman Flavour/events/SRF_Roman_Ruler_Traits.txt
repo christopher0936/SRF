@@ -55,7 +55,7 @@ character_event = {
 # Augusta Trait Gained
 character_event = {
 	id = SRF_RRT.3
-	desc = EVTDESCPA.10000
+	desc = EVTDESCSRF_RRT.3
 	picture = GFX_evt_rome_restored_byzantine
 	
 	trigger = {
@@ -78,7 +78,7 @@ character_event = {
 # Augusta Trait Lost
 character_event = {
 	id = SRF_RRT.4
-	desc = EVTDESCPA.10001
+	desc = EVTDESCSRF_RRT.4
 	picture = GFX_evt_rome_restored_byzantine
 	
 	trigger = {
@@ -103,7 +103,7 @@ character_event = {
 # Autokrator Trait Gained
 character_event = {
 	id = SRF_RRT.5
-	desc = EVTDESCPA.10012
+	desc = EVTDESCSRF_RRT.5
 	picture = GFX_evt_holy_emperor
 	
 	trigger = {
@@ -126,7 +126,7 @@ character_event = {
 # Autokrator Trait Lost
 character_event = {
 	id = SRF_RRT.6
-	desc = EVTDESCPA.10013
+	desc = EVTDESCSRF_RRT.6
 	picture = GFX_evt_holy_emperor
 	
 	trigger = {
@@ -148,7 +148,7 @@ character_event = {
 # Autokrateira Trait Gained
 character_event = {
 	id = SRF_RRT.7
-	desc = EVTDESCPA.10014
+	desc = EVTDESCSRF_RRT.7
 	picture = GFX_evt_holy_emperor
 	
 	trigger = {
@@ -171,7 +171,7 @@ character_event = {
 # Autokrateira Trait Lost
 character_event = {
 	id = SRF_RRT.8
-	desc = EVTDESCPA.10015
+	desc = EVTDESCSRF_RRT.8
 	picture = GFX_evt_holy_emperor
 	
 	trigger = {
