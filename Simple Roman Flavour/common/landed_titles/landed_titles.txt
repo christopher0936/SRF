@@ -5529,6 +5529,7 @@ e_byzantium = {
 				}
 			}
 		}
+	}
 	
 	k_anatolia = {
 		color={ 177 60 100 }
