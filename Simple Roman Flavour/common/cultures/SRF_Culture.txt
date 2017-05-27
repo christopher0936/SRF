@@ -158,5 +158,3 @@ byzantine = {
 		modifier = default_culture_modifier
 	}
 }
-
-}
