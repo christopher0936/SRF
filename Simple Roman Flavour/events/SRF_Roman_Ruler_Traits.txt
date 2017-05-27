@@ -70,7 +70,7 @@ character_event = {
 	}
 	
 	option = {
-		name = OPTPA_10000
+		name = EVTOPTASRF_RRT.3
 		add_trait = augusta
 	}
 }
@@ -93,7 +93,7 @@ character_event = {
 	}
 	
 	option = {
-		name = OPTPA_10001
+		name = EVTOPTASRF_RRT.4
 		remove_trait = augusta
 	}
 }
@@ -118,7 +118,7 @@ character_event = {
 	}
 	
 	option = {
-		name = OPTPA_10012
+		name = EVTOPTASRF_RRT.5
 		add_trait = autokrator
 	}
 }
@@ -140,7 +140,7 @@ character_event = {
 	}
 	
 	option = {
-		name = OPTPA_10013
+		name = EVTOPTASRF_RRT.6
 		remove_trait = autokrator
 	}
 }
@@ -163,7 +163,7 @@ character_event = {
 	}
 	
 	option = {
-		name = OPTPA_10014
+		name = EVTOPTASRF_RRT.7
 		add_trait = autokrateira
 	}
 }
@@ -185,7 +185,7 @@ character_event = {
 	}
 	
 	option = {
-		name = OPTPA_10015
+		name = EVTOPTASRF_RRT.8
 		remove_trait = autokrateira
 	}
 }
