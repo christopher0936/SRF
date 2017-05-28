@@ -38,3 +38,24 @@ autokrateira = {
 	male_compliment = COMPL_AUTOKRATEIRA
 	female_compliment = COMPL_AUTOKRATEIRA	
 }
+
+imperator = {
+	customizer = no
+	
+	vassal_opinion = 10
+	monthly_character_prestige = 0.5
+
+	male_compliment = COMPL_IMPERATOR
+	female_compliment = COMPL_IMPERATOR
+}
+
+imperatrix = {
+	customizer = no
+	
+	vassal_opinion = 10
+	monthly_character_prestige = 0.5
+
+
+	male_compliment = COMPL_IMPERATRIX
+	female_compliment = COMPL_IMPERATRIX
+}

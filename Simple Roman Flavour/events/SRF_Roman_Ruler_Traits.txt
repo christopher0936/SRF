@@ -189,3 +189,96 @@ character_event = {
 		remove_trait = autokrateira
 	}
 }
+
+### The Imperator/Imperatrix Traits
+
+
+# Imperator Trait Gained
+character_event = {
+	id = SRF_RRT.9
+	desc = EVTDESCSRF_RRT.9
+	picture = GFX_evt_holy_emperor
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		is_female = no
+		NOT = { trait = imperator }
+		has_landed_title = e_wre
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTASRF_RRT.9
+		add_trait = imperator
+	}
+}
+
+# Imperator Trait Lost
+character_event = {
+	id = SRF_RRT.10
+	desc = EVTDESCSRF_RRT.10
+	picture = GFX_evt_holy_emperor
+	
+	trigger = {
+		trait = imperator
+		is_alive = yes
+		NOT = { has_landed_title = e_wre }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTASRF_RRT.10
+		remove_trait = imperator
+	}
+}
+
+# Imperatrix Trait Gained
+character_event = {
+	id = SRF_RRT.11
+	desc = EVTDESCSRF_RRT.11
+	picture = GFX_evt_holy_emperor
+	
+	trigger = {
+		has_dlc = "Legacy of Rome"
+		is_female = yes
+		NOT = { trait = imperatrix }
+		has_landed_title = e_wre
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTASRF_RRT.11
+		add_trait = imperatrix
+	}
+}
+
+# Imperatrix Trait Lost
+character_event = {
+	id = SRF_RRT.12
+	desc = EVTDESCSRF_RRT.12
+	picture = GFX_evt_holy_emperor
+	
+	trigger = {
+		trait = imperatrix
+		is_alive = yes
+		NOT = { has_landed_title = e_wre }
+	}
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = EVTOPTASRF_RRT.12
+		remove_trait = imperatrix
+	}
+}

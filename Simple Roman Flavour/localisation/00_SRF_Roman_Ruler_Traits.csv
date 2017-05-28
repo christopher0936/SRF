@@ -8,6 +8,10 @@ autokrator;Autokrator;;;;;;;;;x
 autokrator_desc;This character is the current ruler of the Eastern Roman Empire and commands the respect an office of such magnitude is due.;;;;;;;;;x 
 autokrateira;Autokrateira;;;;;;;;;x 
 autokrateira_desc;This character is the current ruler of the Eastern Roman Empire and commands the respect an office of such magnitude is due.;;;;;;;;;x 
+imperator;Imperator.;;;;;;;;;x 
+imperator_desc;This character is the current ruler of the Western Roman Empire and commands the respect an office of such magnitude is due.;;;;;;;;;x 
+imperatrix;Imperatrix.;;;;;;;;;x 
+imperatrix_desc;This character is the current ruler of the Western Roman Empire and commands the respect an office of such magnitude is due.;;;;;;;;;x 
 
 #Augustus and Company Compliments
 
@@ -15,6 +19,8 @@ COMPL_AUGUSTUS;Augustus;;;;;;;;;x
 COMPL_AUGUSTA;Augusta;;;;;;;;;x 
 COMPL_AUTOKRATOR;Autokrator;;;;;;;;;x 
 COMPL_AUTOKRATEIRA;Autokrateira;;;;;;;;;x 
+COMPL_IMPERATOR;Imperator;;;;;;;;;x 
+COMPL_IMPERATRIX;Imperatrix;;;;;;;;;x 
 
 #Augustus and Company Gain and Loss Events
 
@@ -41,3 +47,15 @@ EVTDESCSRF_RRT.7;You are the current Basilissa of the glorious Eastern Roman Emp
 EVTOPTASRF_RRT.7;Hail the Basilissa!;;;;;;;;;;;;;x
 EVTDESCSRF_RRT.8;You are no longer the Basilissa of the Eastern Roman Empire. It will surely crumble without your guiding hand to lead it.;;;;;;;;;;;;;x
 EVTOPTASRF_RRT.8;What a loss for the Empire!;;;;;;;;;;;;;x
+
+#Imperator
+EVTDESCSRF_RRT.9;You are the current Emperor of the glorious Western Roman Empire. May your reign be a prosperous one!;;;;;;;;;;;;;x
+EVTOPTASRF_RRT.9;Hail the Emperor!;;;;;;;;;;;;;x
+EVTDESCSRF_RRT.10;You are no longer the Emperor of the Western Roman Empire. It will surely crumble without your guiding hand to lead it.;;;;;;;;;;;;;x
+EVTOPTASRF_RRT.10;What a loss for the Empire!;;;;;;;;;;;;;x
+
+#Imperatrix
+EVTDESCSRF_RRT.11;You are the current Empress of the glorious Western Roman Empire. May your reign be a prosperous one!;;;;;;;;;;;;;x
+EVTOPTASRF_RRT.11;Hail the Empress!;;;;;;;;;;;;;x
+EVTDESCSRF_RRT.12;You are no longer the Empress of the Western Roman Empire. It will surely crumble without your guiding hand to lead it.;;;;;;;;;;;;;x
+EVTOPTASRF_RRT.12;What a loss for the Empire!;;;;;;;;;;;;;x
