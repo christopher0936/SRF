@@ -1,0 +1,3 @@
+add
+replace_path = "gfx/loadingscreens"
+to the .mod file
