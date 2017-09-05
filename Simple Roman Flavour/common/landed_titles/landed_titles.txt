@@ -17842,6 +17842,7 @@ e_persia = {
 	color={ 131 204 20 }
 	color2={ 255 255 255 }
 	
+	capital = 693 #	Baghdad
 	
 	culture = persian
 	
