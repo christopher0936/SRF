@@ -112,7 +112,9 @@ has_aztec_disease = {
 	is_epidemic = yes
 	is_illness = yes
 	
-	sex_appeal_opinion = -30
+	sex_appeal_opinion = -10
+
+	general_opinion = -5
 	
 	diplomacy_penalty = -3
 	stewardship_penalty = -2
@@ -232,6 +234,7 @@ viking = {
 	opposites =  {
 		ravager
 		seaking
+		sea_queen
 	}
 	martial = 1
 	combat_rating = 1
@@ -244,9 +247,9 @@ viking = {
 	male_insult = COMPL_PIRATE
 	female_insult = COMPL_PIRATE
 	male_compliment = COMPL_VIKING
-	male_compliment_adj = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING_adj
 	female_compliment = COMPL_VALKYRIE
-	female_compliment_adj = COMPL_VIKING
+	female_compliment_adj = COMPL_VIKING_adj
 }
 
 monk = {
@@ -325,8 +328,7 @@ mutazilite = {
 		ashari
 	}
 	
-	same_opinion = 15
-	opposite_opinion = -25
+	opposite_opinion = -30
 	
 	customizer = no
 	random = no
@@ -341,8 +343,7 @@ ashari = {
 		mutazilite
 	}
 	
-	same_opinion = 15
-	opposite_opinion = -25
+	opposite_opinion = -30
 	
 	customizer = no
 	random = no
@@ -641,6 +642,13 @@ narrow_flank_leader = {
 }
 
 brahmin = {
+	potential = {
+		OR = {
+			religion = buddhist
+			religion = hindu
+			religion = jain
+		}
+	}
 	opposites = {
 		kshatriya
 		vaishya
@@ -655,6 +663,13 @@ brahmin = {
 }
 
 kshatriya = {
+	potential = {
+		OR = {
+			religion = buddhist
+			religion = hindu
+			religion = jain
+		}
+	}
 	opposites = {
 		brahmin
 		vaishya
@@ -669,6 +684,13 @@ kshatriya = {
 }
 
 vaishya = {
+	potential = {
+		OR = {
+			religion = buddhist
+			religion = hindu
+			religion = jain
+		}
+	}
 	opposites = {
 		brahmin
 		kshatriya
@@ -1309,7 +1331,7 @@ idolizer = {
 horse = {
 	sex_appeal_opinion = -20
 	fertility = -50.0
-	health = -4
+	health = -2
 
 	diplomacy = -10
 	intrigue = -10
@@ -1334,7 +1356,6 @@ horse = {
 
 robust = {
 	opposites =  {
-		weak
 		feeble
 	}
 	
@@ -1354,7 +1375,6 @@ robust = {
 
 feeble = {
 	opposites =  {
-		strong
 		robust
 	}
 	
@@ -1372,8 +1392,6 @@ feeble = {
 
 shrewd = {
 	opposites =  {
-		imbecile
-		slow
 		dull
 	}
 	
@@ -1388,8 +1406,6 @@ shrewd = {
 
 dull = {
 	opposites =  {
-		quick
-		genius
 		shrewd
 	}
 	
@@ -1683,7 +1699,7 @@ one_eyed = {
 	is_health = yes
 	
 	sex_appeal_opinion = -5
-	pagan_opinion = 10
+	pagan_group_opinion = 10
 	same_opinion = 5
 	
 	combat_rating = -1
@@ -1706,7 +1722,7 @@ one_handed = {
 	sex_appeal_opinion = -5
 	same_opinion = 5
 	
-	combat_rating = -3
+	combat_rating = -2
 	
 	customizer = no
 	
@@ -1726,7 +1742,7 @@ one_legged = {
 	sex_appeal_opinion = -10
 	same_opinion = 5
 	
-	combat_rating = -4
+	combat_rating = -3
 
 	customizer = no
 	
@@ -1771,7 +1787,7 @@ mangled = {
 	learning = -2
 	stewardship = -2
 	
-	combat_rating = -2
+	combat_rating = -4
 
 	health = -3
 	
@@ -1949,6 +1965,7 @@ cancer = {
 
 immortal = {
 	health = 10
+	taoist_opinion = 25
 	customizer = no
 	random = no
 	immortal = yes
@@ -1973,10 +1990,11 @@ valhalla_bound  = {
 	martial = 2
 	combat_rating = 1
 	
-	pagan_opinion = 5
+	pagan_group_opinion = 5
 	same_opinion_if_same_religion = 15
 	
 	ai_zeal = 10
+	customizer = no
 	
 	male_compliment = COMPL_VALHALLA_BOUND_MALE
 	female_compliment = COMPL_VALHALLA_BOUND_FEMALE
@@ -2005,9 +2023,9 @@ ravager = {
 	male_insult = COMPL_PIRATE
 	female_insult = COMPL_PIRATE
 	male_compliment = COMPL_VIKING
-	male_compliment_adj = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING_adj
 	female_compliment = COMPL_VALKYRIE
-	female_compliment_adj = COMPL_VIKING
+	female_compliment_adj = COMPL_VIKING_adj
 }
 
 seaking = {
@@ -2032,9 +2050,9 @@ seaking = {
 	male_insult = COMPL_PIRATE
 	female_insult = COMPL_PIRATE
 	male_compliment = COMPL_VIKING
-	male_compliment_adj = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING_adj
 	female_compliment = COMPL_VALKYRIE
-	female_compliment_adj = COMPL_VIKING
+	female_compliment_adj = COMPL_VIKING_adj
 }
 
 dancing_plague = {
@@ -2050,6 +2068,7 @@ dancing_plague = {
 	fertility = 0.25
 	
 	customizer = no
+
 	male_insult_adj = INSULT_SICKLY
 	female_insult_adj = INSULT_SICKLY
 	child_insult_adj = INSULT_SICKLY
@@ -2065,8 +2084,10 @@ shieldmaiden  = {
 	
 	ai_zeal = 10
 	
+	customizer = no
+
 	female_compliment = COMPL_VALKYRIE
-	female_compliment_adj = COMPL_VIKING
+	female_compliment_adj = COMPL_VIKING_adj
 }
 
 physician = {
@@ -2106,6 +2127,8 @@ scurvy = {
 	learning_penalty = -1
 	combat_rating = -2
 	
+	customizer = no
+	
 	male_insult_adj = INSULT_SICKLY
 	female_insult_adj = INSULT_SICKLY
 	child_insult_adj = INSULT_SICKLY
@@ -2118,11 +2141,15 @@ sick_incapable = {
 	
 	incapacitating = yes # Will need a regent
 	
+	customizer = no
+	random = no
+	
 	male_insult = INSULT_VEGETABLE
 	female_insult = INSULT_VEGETABLE
 	male_insult_adj = INSULT_USELESS
 	female_insult_adj = INSULT_USELESS
 }
+
 cannot_marry = {
 	cannot_marry = yes
 	hidden = yes
@@ -2130,6 +2157,7 @@ cannot_marry = {
 	customizer = no
 	random = no
 }
+
 sea_queen = {
 	potential = {
 		OR = {
@@ -2153,9 +2181,9 @@ sea_queen = {
 	male_insult = COMPL_PIRATE
 	female_insult = COMPL_PIRATE
 	male_compliment = COMPL_VIKING
-	male_compliment_adj = COMPL_VIKING
+	male_compliment_adj = COMPL_VIKING_adj
 	female_compliment = COMPL_VALKYRIE
-	female_compliment_adj = COMPL_VIKING
+	female_compliment_adj = COMPL_VIKING_adj
 }
 
 eagle_warrior = {
@@ -2526,6 +2554,13 @@ disinherited = {
 
 #Catholic
 secretly_catholic = {
+
+	potential = {
+		NOT = {
+			religion = catholic
+		}
+	}
+	
 	opposites = {
 		secretly_cathar
 		secretly_fraticelli
@@ -2596,6 +2631,13 @@ secretly_catholic = {
 }
 
 secretly_cathar = {
+	
+	potential = {
+		NOT = {
+			religion = cathar
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_fraticelli
@@ -2654,6 +2696,13 @@ secretly_cathar = {
 }
 
 secretly_fraticelli = {
+
+	potential = {
+		NOT = {
+			religion = fraticelli
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2712,6 +2761,13 @@ secretly_fraticelli = {
 }
 
 secretly_waldensian = {
+
+	potential = {
+		NOT = {
+			religion = waldensian
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2770,6 +2826,13 @@ secretly_waldensian = {
 }
 
 secretly_lollard = {
+
+	potential = {
+		NOT = {
+			religion = lollard
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2829,6 +2892,13 @@ secretly_lollard = {
 
 #Orthodox
 secretly_orthodox = {
+
+	potential = {
+		NOT = {
+			religion = orthodox
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2899,6 +2969,13 @@ secretly_orthodox = {
 }
 
 secretly_bogomilist = {
+
+	potential = {
+		NOT = {
+			religion = bogomilist
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -2957,6 +3034,13 @@ secretly_bogomilist = {
 }
 
 secretly_monothelite = {
+
+	potential = {
+		NOT = {
+			religion = monothelite
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3015,6 +3099,13 @@ secretly_monothelite = {
 }
 
 secretly_iconoclast = {
+
+	potential = {
+		NOT = {
+			religion = iconoclast
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3073,6 +3164,13 @@ secretly_iconoclast = {
 }
 
 secretly_paulician = {
+
+	potential = {
+		NOT = {
+			religion = paulician
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3132,6 +3230,13 @@ secretly_paulician = {
 
 #Miaphysite
 secretly_miaphysite = {
+
+	potential = {
+		NOT = {
+			religion = miaphysite
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3190,6 +3295,13 @@ secretly_miaphysite = {
 }
 
 secretly_monophysite = {
+
+	potential = {
+		NOT = {
+			religion = monophysite
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3249,6 +3361,13 @@ secretly_monophysite = {
 
 #Nestorian
 secretly_nestorian = {
+
+	potential = {
+		NOT = {
+			religion = nestorian
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3307,6 +3426,13 @@ secretly_nestorian = {
 }
 
 secretly_messalian = {
+
+	potential = {
+		NOT = {
+			religion = messalian
+		}
+	}
+	
 	opposites = {
 		secretly_catholic
 		secretly_cathar
@@ -3367,6 +3493,9 @@ secretly_messalian = {
 #Sunni
 secretly_sunni = {
 	potential = {
+		NOT = {
+			religion = sunni
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3444,6 +3573,9 @@ secretly_sunni = {
 
 secretly_zikri = {
 	potential = {
+		NOT = {
+			religion = zikri
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3509,6 +3641,9 @@ secretly_zikri = {
 
 secretly_yazidi = {
 	potential = {
+		NOT = {
+			religion = yazidi
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3575,6 +3710,9 @@ secretly_yazidi = {
 #Shia
 secretly_shiite = {
 	potential = {
+		NOT = {
+			religion = shiite
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3652,6 +3790,9 @@ secretly_shiite = {
 
 secretly_druze = {
 	potential = {
+		NOT = {
+			religion = druze
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3717,6 +3858,9 @@ secretly_druze = {
 
 secretly_hurufi = {
 	potential = {
+		NOT = {
+			religion = hurufi
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3783,6 +3927,9 @@ secretly_hurufi = {
 #Ibadi
 secretly_ibadi = {
 	potential = {
+		NOT = {
+			religion = ibadi
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3848,6 +3995,9 @@ secretly_ibadi = {
 
 secretly_kharijite = {
 	potential = {
+		NOT = {
+			religion = kharijite
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Sword of Islam"
@@ -3914,6 +4064,9 @@ secretly_kharijite = {
 #Judaism
 secretly_jewish = {
 	potential = {
+		NOT = {
+			religion = jewish
+		}
 		OR = {
 			ai = yes
 			has_dlc = "Sons of Abraham"
@@ -3990,6 +4143,9 @@ secretly_jewish = {
 
 secretly_samaritan = {
 	potential = {
+		NOT = {
+			religion = samaritan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "Sons of Abraham"
@@ -4055,6 +4211,9 @@ secretly_samaritan = {
 
 secretly_karaite = {
 	potential = {
+		NOT = {
+			religion = karaite
+		}
 		OR = {
 			ai = yes
 			has_dlc = "Sons of Abraham"
@@ -4121,6 +4280,9 @@ secretly_karaite = {
 #Zoroastrian
 secretly_zoroastrian = {
 	potential = {
+		NOT = {
+			religion = zoroastrian
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4198,6 +4360,9 @@ secretly_zoroastrian = {
 
 secretly_mazdaki = {
 	potential = {
+		NOT = {
+			religion = mazdaki
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4263,6 +4428,9 @@ secretly_mazdaki = {
 
 secretly_manichean = {
 	potential = {
+		NOT = {
+			religion = manichean
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4329,6 +4497,9 @@ secretly_manichean = {
 #Hinduism
 secretly_hinduism = {
 	potential = {
+		NOT = {
+			religion = hindu
+		}
 		OR = {
 			ai = yes
 			has_dlc = "Rajas of India"
@@ -4407,6 +4578,9 @@ secretly_hinduism = {
 #Buddhism
 secretly_buddhism = {
 	potential = {
+		NOT = {
+			religion = buddhist
+		}
 		OR = {
 			ai = yes
 			has_dlc = "Rajas of India"
@@ -4485,6 +4659,9 @@ secretly_buddhism = {
 #Jainism
 secretly_jain = {
 	potential = {
+		NOT = {
+			religion = jain
+		}
 		OR = {
 			ai = yes
 			has_dlc = "Rajas of India"
@@ -4563,6 +4740,9 @@ secretly_jain = {
 #Pagan
 secretly_norse_pagan = {
 	potential = {
+		NOT = {
+			religion = norse_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4628,6 +4808,9 @@ secretly_norse_pagan = {
 
 secretly_norse_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = norse_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4705,6 +4888,9 @@ secretly_norse_pagan_reformed = {
 
 secretly_baltic_pagan = {
 	potential = {
+		NOT = {
+			religion = baltic_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4770,6 +4956,9 @@ secretly_baltic_pagan = {
 
 secretly_baltic_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = baltic_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4847,6 +5036,9 @@ secretly_baltic_pagan_reformed = {
 
 secretly_finnish_pagan = {
 	potential = {
+		NOT = {
+			religion = finnish_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4912,6 +5104,9 @@ secretly_finnish_pagan = {
 
 secretly_finnish_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = finnish_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -4989,6 +5184,9 @@ secretly_finnish_pagan_reformed = {
 
 secretly_slavic_pagan = {
 	potential = {
+		NOT = {
+			religion = slavic_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5054,6 +5252,9 @@ secretly_slavic_pagan = {
 
 secretly_slavic_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = slavic_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5131,6 +5332,9 @@ secretly_slavic_pagan_reformed = {
 
 secretly_tengri_pagan = {
 	potential = {
+		NOT = {
+			religion = tengri_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5196,6 +5400,9 @@ secretly_tengri_pagan = {
 
 secretly_tengri_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = tengri_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5273,6 +5480,9 @@ secretly_tengri_pagan_reformed = {
 
 secretly_aztec = {
 	potential = {
+		NOT = {
+			religion = aztec
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5338,6 +5548,9 @@ secretly_aztec = {
 
 secretly_aztec_reformed = {
 	potential = {
+		NOT = {
+			religion = aztec_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5403,6 +5616,9 @@ secretly_aztec_reformed = {
 
 secretly_west_african_pagan = {
 	potential = {
+		NOT = {
+			religion = west_african_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5468,6 +5684,9 @@ secretly_west_african_pagan = {
 
 secretly_west_african_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = west_african_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5545,6 +5764,9 @@ secretly_west_african_pagan_reformed = {
 
 secretly_zun_pagan = {
 	potential = {
+		NOT = {
+			religion = zun_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5610,6 +5832,9 @@ secretly_zun_pagan = {
 
 secretly_zun_pagan_reformed = {
 	potential = {
+		NOT = {
+			religion = zun_pagan_reformed
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5687,6 +5912,9 @@ secretly_zun_pagan_reformed = {
 
 secretly_hellenic_pagan = {
 	potential = {
+		NOT = {
+			religion = hellenic_pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5752,6 +5980,9 @@ secretly_hellenic_pagan = {
 
 secretly_pagan = {
 	potential = {
+		NOT = {
+			religion = pagan
+		}
 		OR = {
 			ai = yes
 			has_dlc = "The Old Gods"
@@ -5933,7 +6164,7 @@ sanyasini = {
 # Dharmic who has completed a Pilgrimage
 indian_pilgrim = {
 	potential = {
-		religion_group = indian_group
+		has_dharmic_religion_trigger = yes
 	}
 	
 	same_religion_opinion = 5
@@ -5946,7 +6177,7 @@ indian_pilgrim = {
 # Dharmic pilgrim while doing pilgrimage
 on_indian_pilgrimage = {
 	potential = {
-		religion_group = indian_group
+		has_dharmic_religion_trigger = yes
 		NOT = { trait = pilgrim }
 	}
 	
@@ -5993,4 +6224,169 @@ otter = {
 	customizer = no
 	random = no
 	religious = yes
+}
+
+cat = {
+	sex_appeal_opinion = -20
+	fertility = -50.0
+	health = -2
+
+	diplomacy = -10
+	intrigue = -10
+	stewardship = -10
+	martial = -10
+	learning = -10
+
+	inherit_chance = 100
+
+	customizer = no
+	random = no
+	
+	cannot_marry = yes
+	cannot_inherit = yes
+	can_hold_titles = no # Hopefully this will block Glitterhoof from becoming pope again
+
+	potential = {
+		race = cat
+	}
+}
+
+master_of_flame = { # Way of the Dragon
+	leader = yes
+	potential = {
+		OR = {
+			culture = han
+			has_character_flag = taught_chinese_strategy
+			has_character_flag = originated_from_chinese_court
+		}
+	}
+	
+	command_modifier = {
+		damage = 0.2
+		morale_offence = 0.2
+	}
+}
+
+logistics_expert = { # Way of the Dog
+	leader = yes
+	potential = {
+		OR = {
+			culture = han
+			has_character_flag = taught_chinese_strategy
+			has_character_flag = originated_from_chinese_court
+		}
+	}
+	attrition = -0.5
+	days_of_supply = 30
+
+	command_modifier = {
+		center = 0.2
+	}
+}
+
+levy_coordinator = { # Way of the Tiger
+	leader = yes
+	potential = {
+		OR = {
+			culture = han
+			has_character_flag = taught_chinese_strategy
+			has_character_flag = originated_from_chinese_court
+		}
+	}
+
+	command_modifier = {
+		flank = 0.2
+		speed = 0.3
+		retreat = 0.2
+	}
+}
+
+sapper = { # Way of the Leopard
+	leader = yes
+	potential = {
+		OR = {
+			culture = han
+			has_character_flag = taught_chinese_strategy
+			has_character_flag = originated_from_chinese_court
+		}
+	}
+
+	command_modifier = {
+		terrain = forest
+		terrain = hills
+		siege = 0.5
+	}
+}
+
+# Tiered kinslaying traits
+# Kinslayer in 00_traits = Parents, Grandparents and above, Siblings, Children, Grandchildren and below
+# Familial Kinslayer = Aunts/Uncles (blood only), cousins, nieces/nephews
+# Dynastic Kinslayer = Any other dynasty member
+familial_kinslayer = {
+	potential = {
+		NOT = { religion_group = muslim }
+	}
+
+	opposites = {
+		kinslayer
+		dynastic_kinslayer
+	}
+
+	diplomacy = -4
+	
+	dynasty_opinion = -20
+	general_opinion = -5
+	
+	random = no
+	
+	male_insult = INSULT_KINSLAYER
+	female_insult = INSULT_KINSLAYER
+}
+dynastic_kinslayer = {
+	potential = {
+		NOT = { religion_group = muslim }
+	}
+
+	opposites = {
+		kinslayer
+		familial_kinslayer
+	}
+
+	diplomacy = -3
+	
+	dynasty_opinion = -15
+	
+	random = no
+	
+	male_insult = INSULT_KINSLAYER
+	female_insult = INSULT_KINSLAYER
+}
+kow_tow_travels = {
+	pilgrimage = yes
+	monthly_character_wealth = -0.2
+	health = -0.5
+	
+	customizer = no
+	random = no
+}
+kow_tow_completed_tier_1 = {
+	monthly_grace = 1
+	monthly_character_prestige = -0.1
+	
+	customizer = no
+	random = no
+}
+kow_tow_completed_tier_2 = {
+	monthly_grace = 2
+	monthly_character_prestige = -0.1
+	
+	customizer = no
+	random = no
+}
+kow_tow_completed_tier_3 = {
+	monthly_grace = 4
+	monthly_character_prestige = -0.1
+	
+	customizer = no
+	random = no
 }
