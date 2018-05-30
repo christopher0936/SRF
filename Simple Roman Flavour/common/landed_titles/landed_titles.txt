@@ -4874,118 +4874,6 @@ e_byzantium = {
 		orthodox = 5000 # Crusade target weight
 		catholic = 2000 # Crusade target weight
 		
-		d_nikaea = {
-			color={ 202 101 167 }
-			color2={ 255 255 20 }
-			
-			capital = 750 # Nikaea
-			
-			c_nikaea = {
-				color={ 205 104 170 }
-				color2={ 255 255 20 }
-				
-				turkish = "Iznik"
-				
-				b_nikaea = {
-					turkish = "Iznik"
-				}
-				b_kios = {
-				}
-				b_optimatum = {
-				}
-				b_petobriga = {
-				}
-				b_kotyaion = {
-				}
-				b_palaeokastron = {
-				}
-				b_yalova = {
-				}
-				b_modrene = {
-				}
-			}
-			c_nikomedeia = {
-				color={ 208 107 173 }
-				color2={ 255 255 20 }
-				
-				turkish = "Izmit"
-				
-				b_nikomedeia = {
-					turkish = "Izmit"
-				}
-				b_chalkedon = {
-				}
-				b_chrysopolis = {
-				} 
-				b_praenetos = {
-				}
-				b_calpe = {
-				}
-				b_palodes = {
-				}
-				b_adapazari = {
-					greek = "Mesonesion"
-				}
-				b_malagina = {
-				}
-			}
-			c_prusa = {
-				color={ 211 110 176 }
-				color2={ 255 255 20 }
-				
-				turkish = "Bursa"
-				
-				b_prusa = {
-					turkish = "Hüdavendigar"
-				}
-				b_darieium = {
-					greek = "Dorieion"
-					turkish = "Sögüt"
-				}
-				b_apamea = {
-					greek = "Trigleia"
-					turkish = "Tirilye"
-				}
-				b_docimium = {
-					greek = "Dokimeion"
-					turkish = "Iscehisar"
-				}
-				b_adrastea = {
-				}
-				b_thyatira = {
-				}
-				b_pelopia = {
-				}
-				b_miletopolis = {
-				}
-			}
-			c_kyzikos = {
-				color={ 214 113 179 }
-				color2={ 255 255 20 }
-				
-				turkish = "Erdek"
-				
-				b_kyzikos = {
-					turkish = "Aydincik"
-				}
-				b_artake = {
-					turkish = "Erdek"
-				}
-				b_militopolis = {
-				}
-				b_kremasti = {
-				}
-				b_adrianutherai = {
-				}
-				b_myrina = {
-				}
-				b_percote = {
-				}
-				b_arisbe = {
-				}
-			}
-		}
-		
 		d_thrace = {
 			color={ 172 76 139 }
 			color2={ 255 255 20 }
@@ -5555,32 +5443,6 @@ e_byzantium = {
 			
 			capital = 484 # Naxos
 			
-			c_abydos = {
-				color={ 147 55 115 }
-				color2={ 255 255 20 }
-				
-				turkish = "Balakhisar"
-
-				holy_site = hellenic_pagan
-				
-				b_abydos = {
-					turkish = "Balakhisar"
-				}
-				b_lampsakos = {
-				}
-				b_alexandriatroas = {
-				}
-				b_pigai = {
-				}
-				b_aegae = {
-				}
-				b_allianoi = {
-				}
-				b_cebrene = {
-				}
-				b_elaia = {
-				}
-			}
 			c_naxos = {
 				color={ 149 57 117 }
 				color2={ 255 255 20 }
@@ -5736,8 +5598,21 @@ e_byzantium = {
 				}
 			}
 		}
+	}
+	
+	k_anatolia = {
+		color={ 177 60 100 }
+		color2={ 255 255 23 }
 		
-		d_cyprus = {
+		capital = 759 # Ikonion
+		
+		culture = greek
+		
+		orthodox = 300 # Crusade target weight
+		catholic = 75 # Crusade target weight
+		muslim = 100 # Crusade target weight
+
+		d_cyprus = { #Moved from Greece to Anatolia
 			color={ 239 109 163 }
 			color2={ 255 255 20 }
 			
@@ -5792,20 +5667,145 @@ e_byzantium = {
 				}
 			}
 		}
-	}
-	
-	k_anatolia = {
-		color={ 177 60 100 }
-		color2={ 255 255 23 }
 		
-		capital = 759 # Ikonion
-		
-		culture = greek
-		
-		orthodox = 300 # Crusade target weight
-		catholic = 75 # Crusade target weight
-		muslim = 100 # Crusade target weight
-		
+		d_nikaea = { #Moved From Greece to Anatolia
+			color={ 202 101 167 }
+			color2={ 255 255 20 }
+			
+			capital = 750 # Nikaea
+			
+			c_nikaea = {
+				color={ 205 104 170 }
+				color2={ 255 255 20 }
+				
+				turkish = "Iznik"
+				
+				b_nikaea = {
+					turkish = "Iznik"
+				}
+				b_kios = {
+				}
+				b_optimatum = {
+				}
+				b_petobriga = {
+				}
+				b_kotyaion = {
+				}
+				b_palaeokastron = {
+				}
+				b_yalova = {
+				}
+				b_modrene = {
+				}
+			}
+			c_nikomedeia = {
+				color={ 208 107 173 }
+				color2={ 255 255 20 }
+				
+				turkish = "Izmit"
+				
+				b_nikomedeia = {
+					turkish = "Izmit"
+				}
+				b_chalkedon = {
+				}
+				b_chrysopolis = {
+				} 
+				b_praenetos = {
+				}
+				b_calpe = {
+				}
+				b_palodes = {
+				}
+				b_adapazari = {
+					greek = "Mesonesion"
+				}
+				b_malagina = {
+				}
+			}
+			c_prusa = {
+				color={ 211 110 176 }
+				color2={ 255 255 20 }
+				
+				turkish = "Bursa"
+				
+				b_prusa = {
+					turkish = "Hüdavendigar"
+				}
+				b_darieium = {
+					greek = "Dorieion"
+					turkish = "Sögüt"
+				}
+				b_apamea = {
+					greek = "Trigleia"
+					turkish = "Tirilye"
+				}
+				b_docimium = {
+					greek = "Dokimeion"
+					turkish = "Iscehisar"
+				}
+				b_adrastea = {
+				}
+				b_thyatira = {
+				}
+				b_pelopia = {
+				}
+				b_miletopolis = {
+				}
+			}
+			c_kyzikos = {
+				color={ 214 113 179 }
+				color2={ 255 255 20 }
+				
+				turkish = "Erdek"
+				
+				b_kyzikos = {
+					turkish = "Aydincik"
+				}
+				b_artake = {
+					turkish = "Erdek"
+				}
+				b_militopolis = {
+				}
+				b_kremasti = {
+				}
+				b_adrianutherai = {
+				}
+				b_myrina = {
+				}
+				b_percote = {
+				}
+				b_arisbe = {
+				}
+			}
+			c_abydos = { #Moved from Aegean Islands to Nikaea
+				color={ 147 55 115 }
+				color2={ 255 255 20 }
+				
+				turkish = "Balakhisar"
+
+				holy_site = hellenic_pagan
+				
+				b_abydos = {
+					turkish = "Balakhisar"
+				}
+				b_lampsakos = {
+				}
+				b_alexandriatroas = {
+				}
+				b_pigai = {
+				}
+				b_aegae = {
+				}
+				b_allianoi = {
+				}
+				b_cebrene = {
+				}
+				b_elaia = {
+				}
+			}
+		}
+
 		d_samos = {
 			color={ 115 55 100 }
 			color2={ 255 255 20 }
@@ -26299,6 +26299,97 @@ e_arabia = {
 		zun_pagan_reformed = 100 # Crusade target weight
 		jewish_group = 500 # Crusade target weight
 		
+		d_cyrenaica = { #Moved from Africa to Egypt
+			color={ 32 150 63 }
+			color2={ 255 255 255 }
+			
+			capital = 806 # Cyrenaica
+		
+			c_cyrenaica = {
+				color={ 34 152 65 }
+				color2={ 255 255 255 }
+			
+				b_cyrene = {
+				}
+				b_marsasusah = {
+				}
+				b_derna = {
+				}
+				b_altamimi = {
+				}
+				b_alqubbah = {
+				}
+				b_athrun = {
+				}
+				b_mukhayta = {
+				}
+				b_khadra = {
+				}
+			}
+			c_senoussi = {
+				color={ 36 154 67 }
+				color2={ 255 255 255 }
+			
+				b_kufra = {
+				}
+				b_jalu = {
+				}
+				b_jakharrah = {
+				}
+				b_gabr = {
+				}
+				b_attallab = {
+				}
+				b_attaj = {
+				}
+				b_buzayman = {
+				}
+				b_tazirbu = {
+				}
+			}
+			c_benghazi = {
+				color={ 38 156 69 }
+				color2={ 255 255 255 }
+			
+				b_benghazi = {
+				}
+				b_barca = {
+				}
+				b_oriana = {
+				}
+				b_tulmaytath = {
+				}
+				b_ajdabiya = {
+				}
+				b_daryanah = {
+				}
+				b_tansulukh = {
+				}
+				b_jardinah = {
+				}
+			}
+			c_tobruk = {
+				color={ 40 158 71 }
+				color2={ 255 255 255 }
+			
+				b_tobruk = {
+				}
+				b_bardia = {
+				}
+				b_sollum = {
+				}
+				b_alqardabah = {
+				}
+				b_acroma = {
+				}
+				b_kambut = {
+				}
+				b_zanzur = {
+				}
+				b_rukbah = {
+				}
+			}
+		}
 		d_alexandria = {
 			color={ 100 219 134 }
 			color2={ 255 255 255 }
@@ -27757,6 +27848,118 @@ e_arabia = {
 		west_african_pagan_reformed = 100
 		aztec_reformed = 500
 	
+		d_kabylia = { #Moved from Africa to Mauretania
+			color={ 164 247 131 }
+			color2={ 255 255 255 }
+			
+			capital = 825 # Beni Yanni
+		
+			c_beni_yanni = {
+				color={ 35 153 46 }
+				color2={ 255 255 255 }
+			
+				b_bourmedes = {
+				}
+				b_tafoughalt = {
+				}
+				b_tigzirt = {
+				}
+				b_bujima = {
+				}
+				b_azeffoun = {
+				}
+				b_azazga = {
+				}
+				b_taoudouch = {
+				}
+				b_thiza = {
+				}
+			}
+			c_tell_atlas = {
+				color={ 37 155 48 }
+				color2={ 255 255 255 }
+			
+				b_tiziouzou = {
+				}
+				b_zaoula = {
+				}
+				b_akaoudj = {
+				}
+				b_mirabeau = {
+				}
+				b_nacina = {
+				}
+				b_draaelmizan = {
+				}
+				b_tagoughalt = {
+				}
+				b_mechreck = {
+				}
+			}
+			c_constantine = {
+				color={ 45 251 102 }
+				color2={ 255 255 255 }
+			
+				b_constantine = {
+				}
+				b_guelma = {
+				}
+				b_tebessa = {
+				}
+				b_elkhroub = {
+				}
+				b_tadjenanet = {
+				}
+				b_oumelbouaghi = {
+				}
+				b_mechtakebira = {
+				}
+				b_guerrah = {
+				}
+			}
+			c_bejaija = {
+				color={ 49 255 106 }
+				color2={ 255 255 255 }
+			
+				b_bejaija = {
+				}
+				b_setif = {
+				}
+				b_mila = {
+				}
+				b_elbekara = {
+				}
+				b_jijel = {
+				}
+				b_boudaoud = {
+				}
+				b_gantas = {
+				}
+				b_eldjabia = {
+				}
+			}
+			c_annaba = {
+				color={ 51 255 108 }
+				color2={ 255 255 255 }
+			
+				b_annabah = {
+				}
+				b_eltarf = {
+				}
+				b_soukahras = {
+				}
+				b_skikda = {
+				}
+				b_elbouni = {
+				}
+				b_boudjama = {
+				}
+				b_drean = {
+				}
+				b_meroudj = {
+				}
+			}
+		}
 		d_marrakech = {
 			color={ 43 150 32 }
 			color2={ 255 255 255 }
@@ -28515,209 +28718,6 @@ e_arabia = {
 				b_qaryatbishr = {
 				}
 				b_nawfalliyah = {
-				}
-			}
-		}
-		d_cyrenaica = {
-			color={ 32 150 63 }
-			color2={ 255 255 255 }
-			
-			capital = 806 # Cyrenaica
-		
-			c_cyrenaica = {
-				color={ 34 152 65 }
-				color2={ 255 255 255 }
-			
-				b_cyrene = {
-				}
-				b_marsasusah = {
-				}
-				b_derna = {
-				}
-				b_altamimi = {
-				}
-				b_alqubbah = {
-				}
-				b_athrun = {
-				}
-				b_mukhayta = {
-				}
-				b_khadra = {
-				}
-			}
-			c_senoussi = {
-				color={ 36 154 67 }
-				color2={ 255 255 255 }
-			
-				b_kufra = {
-				}
-				b_jalu = {
-				}
-				b_jakharrah = {
-				}
-				b_gabr = {
-				}
-				b_attallab = {
-				}
-				b_attaj = {
-				}
-				b_buzayman = {
-				}
-				b_tazirbu = {
-				}
-			}
-			c_benghazi = {
-				color={ 38 156 69 }
-				color2={ 255 255 255 }
-			
-				b_benghazi = {
-				}
-				b_barca = {
-				}
-				b_oriana = {
-				}
-				b_tulmaytath = {
-				}
-				b_ajdabiya = {
-				}
-				b_daryanah = {
-				}
-				b_tansulukh = {
-				}
-				b_jardinah = {
-				}
-			}
-			c_tobruk = {
-				color={ 40 158 71 }
-				color2={ 255 255 255 }
-			
-				b_tobruk = {
-				}
-				b_bardia = {
-				}
-				b_sollum = {
-				}
-				b_alqardabah = {
-				}
-				b_acroma = {
-				}
-				b_kambut = {
-				}
-				b_zanzur = {
-				}
-				b_rukbah = {
-				}
-			}
-		}
-		d_kabylia = {
-			color={ 164 247 131 }
-			color2={ 255 255 255 }
-			
-			capital = 825 # Beni Yanni
-		
-			c_beni_yanni = {
-				color={ 35 153 46 }
-				color2={ 255 255 255 }
-			
-				b_bourmedes = {
-				}
-				b_tafoughalt = {
-				}
-				b_tigzirt = {
-				}
-				b_bujima = {
-				}
-				b_azeffoun = {
-				}
-				b_azazga = {
-				}
-				b_taoudouch = {
-				}
-				b_thiza = {
-				}
-			}
-			c_tell_atlas = {
-				color={ 37 155 48 }
-				color2={ 255 255 255 }
-			
-				b_tiziouzou = {
-				}
-				b_zaoula = {
-				}
-				b_akaoudj = {
-				}
-				b_mirabeau = {
-				}
-				b_nacina = {
-				}
-				b_draaelmizan = {
-				}
-				b_tagoughalt = {
-				}
-				b_mechreck = {
-				}
-			}
-			c_constantine = {
-				color={ 45 251 102 }
-				color2={ 255 255 255 }
-			
-				b_constantine = {
-				}
-				b_guelma = {
-				}
-				b_tebessa = {
-				}
-				b_elkhroub = {
-				}
-				b_tadjenanet = {
-				}
-				b_oumelbouaghi = {
-				}
-				b_mechtakebira = {
-				}
-				b_guerrah = {
-				}
-			}
-			c_bejaija = {
-				color={ 49 255 106 }
-				color2={ 255 255 255 }
-			
-				b_bejaija = {
-				}
-				b_setif = {
-				}
-				b_mila = {
-				}
-				b_elbekara = {
-				}
-				b_jijel = {
-				}
-				b_boudaoud = {
-				}
-				b_gantas = {
-				}
-				b_eldjabia = {
-				}
-			}
-			c_annaba = {
-				color={ 51 255 108 }
-				color2={ 255 255 255 }
-			
-				b_annabah = {
-				}
-				b_eltarf = {
-				}
-				b_soukahras = {
-				}
-				b_skikda = {
-				}
-				b_elbouni = {
-				}
-				b_boudjama = {
-				}
-				b_drean = {
-				}
-				b_meroudj = {
 				}
 			}
 		}
