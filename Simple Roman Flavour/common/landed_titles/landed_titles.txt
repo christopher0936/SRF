@@ -28632,7 +28632,7 @@ e_arabia = {
 		}
 		d_tripolitania = {
 #			color={ 63 175 117 } # WHAT ASSHOLE MADE TRIPOLITANIA AND THE ARABIAN EMPIRE SO SIMILAR IN COLOUR?!
-			color={ 17 228 10 } # Copied Nefoud's colour
+			color={ 124 199 50 } # Copied k_arabia's colour
 			color2={ 255 255 255 }
 			
 			capital = 811 # Tripolitania
