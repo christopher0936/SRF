@@ -320,3 +320,133 @@ custom_eastern_access = {
 		world_himalayas
 	}
 }
+###########################################################################
+# Roman Provinces
+###########################################################################
+
+roman_province_italia = {
+	duchies = {
+		#Italy
+		d_verona d_susa d_lombardia d_genoa d_modena d_ferrara d_toscana d_pisa d_ancona d_spoleto d_latium d_sardinia d_venice d_corsica
+		#Sicily
+		d_benevento d_capua d_apulia d_salerno d_calabria d_sicily
+	}
+}
+
+roman_province_illyria = {
+	duchies = {
+		d_rashka d_dioclea d_slavonia d_bosnia d_croatia d_dalmatia d_carinthia
+	}
+}
+
+roman_province_hellas = {
+	duchies = {
+		#Greece
+		d_thrace d_adrianopolis d_thessalonika d_dyrrachion d_epirus d_athens d_achaia d_krete d_aegean_islands
+		#Bulgaria
+		d_vidin d_turnovo d_karvuna
+	}
+}
+
+roman_province_asia = {
+	duchies = {
+		d_nikaea d_samos d_cibyrrhaeot d_anatolia d_charsianon d_armeniacon d_paphlagonia d_trebizond d_armenia_minor d_armenia d_mesopotamia d_edessa d_coloneia d_kartli d_derbent d_abkhazia  d_thracesia d_cyprus
+	}
+}
+
+roman_province_dacia = {
+		#Hungary
+		d_pecs d_esztergom d_nyitra d_ungvar d_pest d_transylvania d_temes
+		#Wallachia
+		d_wallachia d_moldau
+}
+
+roman_province_taurica = {
+	duchies = {
+		d_cherson d_crimea
+	}
+}
+
+roman_province_syria_palaestina = {
+	duchies = {
+		#Syria
+		d_aleppo d_antioch d_tripoli d_damascus d_palmyra
+		#Jerusalem
+		d_oultrejourdain d_ascalon d_jerusalem d_galilee
+	}
+}
+
+roman_province_mesopotamia = {
+	duchies = {
+		#Al-Jazira
+		d_jazira d_mosul d_mudar
+		#Iraq
+		d_baghdad d_basra d_samarra
+	}
+}
+
+roman_province_aegyptus = {
+	duchies = {
+		d_cyrenaica d_alexandria d_damietta d_cairo d_aswan d_sinai
+	}
+}
+
+roman_province_arabia = {
+	duchies = {
+		d_arabia_petrae d_medina d_sanaa d_oman d_nefoud d_amman d_taizz d_hadramut
+	}
+}
+
+roman_province_africa = {
+	duchies = {
+		d_tripolitania d_tunis
+	}
+}
+
+roman_province_mauretania = {
+	duchies = {
+		d_alger d_fes d_kabylia d_marrakech d_tangiers d_tlemcen
+	}
+}
+
+roman_province_hispania = {
+	duchies = {
+		d_castilla d_aragon d_barcelona d_valencia d_mallorca d_navarra d_asturias d_leon d_galicia d_porto d_beja d_algarve d_cordoba d_murcia d_granada d_sevilla d_badajoz d_toledo
+	}
+}
+
+roman_province_gallia = {
+	duchies = {
+		d_berry d_anjou d_normandy d_orleans d_champagne d_valois d_burgundy d_aquitaine d_toulouse d_gascogne d_poitou d_auvergne d_bourbon d_brittany d_provence d_dauphine d_savoie d_upper_burgundy
+	}
+}
+
+roman_province_germania = {
+	duchies = {
+		d_holland d_gelre d_luxembourg d_upper_lorraine d_lower_lorraine d_alsace d_bavaria d_osterreich d_tyrol d_brunswick d_thuringia d_koln d_franconia d_baden d_swabia d_mecklemburg d_pommerania d_pomeralia d_saxony d_brandenburg d_meissen d_holstein d_brabant d_flanders
+	}
+}
+
+roman_province_lechia = {
+	duchies = {
+		d_greater_poland d_kuyavia d_lesser_poland d_mazovia d_silesia d_bohemia d_moravia
+	}
+}
+
+roman_province_britannia = {
+	duchies = {
+		d_northumberland d_lancaster d_york d_norfolk d_bedford d_hereford d_gloucester d_canterbury d_somerset d_gwynedd d_powys d_deheubarth d_cornwall
+	}
+}
+
+roman_province_caledonia = {
+	duchies = {
+		d_the_isles d_galloway d_western_isles d_lothian d_albany d_moray
+	}
+}
+
+roman_province_hibernia = {
+	duchies = {
+		d_ulster d_connacht d_meath d_leinster d_munster
+	}
+}
