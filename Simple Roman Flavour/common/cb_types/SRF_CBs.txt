@@ -4,64 +4,56 @@ imperial_reconquest = {
 	sprite = 17
 	truce_days = 3650
 	is_permanent = yes
-	check_de_jure_tier = DUKE # this scans all dejure duchies for the counties which are held by or vassals(or below) of selected character. Only valid if is_permanent = yes
 
 	allowed_to_target_tributaries = no
 
 	can_use = {
 		ROOT = {
-			has_landed_title = e_roman_empire
+			OR = {
+				has_landed_title = e_roman_empire
+				has_landed_title = e_byzantium
+				has_landed_title = e_wre
+			}
 			independent = yes
-			religion_group = christian
 			NOT = { same_realm = FROM }
 			mercenary = no
 		}
-		FROM = {
-			NOT = { religion_group = muslim }
-		}
-	}
-
-	can_use_title = {
-		OR = {
-			de_jure_liege_or_above = k_byzantium
-			de_jure_liege_or_above = k_anatolia
-			de_jure_liege_or_above = k_armenia
-			de_jure_liege_or_above = k_bulgaria
-			de_jure_liege_or_above = k_serbia
-			de_jure_liege_or_above = k_croatia
-			de_jure_liege_or_above = k_italy
-			de_jure_liege_or_above = k_sicily
-			de_jure_liege_or_above = k_bavaria
-			de_jure_liege_or_above = k_burgundy
-			de_jure_liege_or_above = k_france
-			de_jure_liege_or_above = k_aquitaine
-			de_jure_liege_or_above = k_brittany
-			de_jure_liege_or_above = k_england
-			de_jure_liege_or_above = k_wales
-			de_jure_liege_or_above = k_frisia
-			de_jure_liege_or_above = k_lotharingia
-			de_jure_liege_or_above = k_aragon
-			de_jure_liege_or_above = k_castille
-			de_jure_liege_or_above = k_andalusia
-			de_jure_liege_or_above = k_leon
-			de_jure_liege_or_above = k_spanish_galicia
-			de_jure_liege_or_above = k_portugal
-			de_jure_liege_or_above = k_navarra
-			de_jure_liege_or_above = k_syria
-			de_jure_liege_or_above = k_jerusalem
-			de_jure_liege_or_above = k_egypt
-			de_jure_liege_or_above = k_africa
-			de_jure_liege_or_above = k_mauretania
-			de_jure_liege_or_above = k_papal_state
-			de_jure_liege_or_above = k_venice
-			de_jure_liege_or_above = k_asturias
+		any_title = {
+			limit = {
+				OR = {
+					region = roman_province_italia
+					region = roman_province_illyria
+					region = roman_province_hellas
+					region = roman_province_asia
+					region = roman_province_dacia
+					region = roman_province_taurica
+					region = roman_province_syria_palaestina
+					region = roman_province_mesopotamia
+					region = roman_province_aegyptus
+					region = roman_province_arabia
+					region = roman_province_africa
+					region = roman_province_mauretania
+					region = roman_province_hispania
+					region = roman_province_gallia
+					region = roman_province_germania
+					region = roman_province_lechia
+					region = roman_province_britannia
+					region = roman_province_caledonia
+					region = roman_province_hibernia
+				}
+			}
+			OR = {
+				holder_scope = FROM
+				realm = {
+					holder_scope = FROM
+				}
+			}
 		}
 	}
 	
 	is_valid = {
 		ROOT = {
 			independent = yes
-			religion_group = christian
 			NOT = { same_realm = FROM }
 		}
 	}
@@ -88,26 +80,38 @@ imperial_reconquest = {
 		}
 		
 		FROM = { prestige = -100 }
-	}
-
-	on_success_title = {
-		custom_tooltip = { 
-			text = other_invasion_succ_tip
-			hidden_tooltip = {
-				ROOT = {
-					vassalize_or_take_under_title = {
-						title = PREV
-						enemy = FROM
-						type = invasion
+		
+		any_title = {
+			limit = {
+				OR = {
+					region = roman_province_italia
+					region = roman_province_illyria
+					region = roman_province_hellas
+					region = roman_province_asia
+					region = roman_province_dacia
+					region = roman_province_taurica
+					region = roman_province_syria_palaestina
+					region = roman_province_mesopotamia
+					region = roman_province_aegyptus
+					region = roman_province_arabia
+					region = roman_province_africa
+					region = roman_province_mauretania
+					region = roman_province_hispania
+					region = roman_province_gallia
+					region = roman_province_germania
+					region = roman_province_lechia
+					region = roman_province_britannia
+					region = roman_province_caledonia
+					region = roman_province_hibernia
+				}
+				OR = {
+					holder_scope = FROM
+					realm = {
+						holder_scope = FROM
 					}
 				}
 			}
-		}
-		if = {
-			limit = {
-				holder_scope = { character = FROM }
-			}
-			usurp_title_only = { target = ROOT type = invasion }
+			usurp_title = { target = ROOT type = invasion }
 		}
 	}
 
